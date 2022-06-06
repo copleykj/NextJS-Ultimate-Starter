@@ -63,5 +63,9 @@
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.md": "markdownlint -f"
   }
 }
